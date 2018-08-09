@@ -33,3 +33,5 @@
 
 # Healthd
 /vendor/bin/hw/android\.hardware\.health@2\.0-service.msm8953			u:object_r:hal_health_default_exec:s0
+
+/sys/class/timed_output/vibrator/vtg_level            u:object_r:sysfs_vibrator:s0
