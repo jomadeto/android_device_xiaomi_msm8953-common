@@ -19,6 +19,7 @@ LOCAL_PATH := $(call my-dir)
 include $(CLEAR_VARS)
 
 LOCAL_C_INCLUDES := system/core/init
+LOCAL_CPP_STD := c++17
 LOCAL_MODULE := libinit_msm8953
 LOCAL_MODULE_TAGS := optional
 LOCAL_SRC_FILES := init_msm8953.cpp
