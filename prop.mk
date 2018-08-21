@@ -40,10 +40,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 bluetooth.hfp.client=1 \
 qcom.bluetooth.soc=smd \
 ro.bluetooth.hfp.ver=1.7 \
-ro.qualcomm.bt.hci_transport=smd \
-persist.bt.enableAptXHD=true \
-persist.service.btui.use_aptx=1 \
-persistent.bt.a2dp_offload_cap=sbc-aptx-aptXHD
+ro.qualcomm.bt.hci_transport=smd
 
 # Camera
 PRODUCT_PROPERTY_OVERRIDES += \
