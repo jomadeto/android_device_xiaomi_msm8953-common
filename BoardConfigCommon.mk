@@ -204,6 +204,9 @@ endif
 # Compile libhwui in performance mode
 HWUI_COMPILE_FOR_PERF := true
 
+# Security patch level
+VENDOR_SECURITY_PATCH := 2018-09-01
+
 # SELinux
 include device/qcom/sepolicy/sepolicy.mk
 BOARD_SEPOLICY_DIRS += $(VENDOR_PATH)/sepolicy
