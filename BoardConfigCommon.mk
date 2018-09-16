@@ -201,6 +201,9 @@ else
 TARGET_RECOVERY_FSTAB := $(VENDOR_PATH)/rootdir/fstab.qcom
 endif
 
+# Compile libhwui in performance mode
+HWUI_COMPILE_FOR_PERF := true
+
 # SELinux
 include device/qcom/sepolicy/sepolicy.mk
 BOARD_SEPOLICY_DIRS += $(VENDOR_PATH)/sepolicy
