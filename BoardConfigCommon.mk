@@ -216,6 +216,9 @@ BOARD_ROOT_EXTRA_FOLDERS := persist
 # Security patch level
 VENDOR_SECURITY_PATCH := 2018-07-01
 
+# Compile libhwui in performance mode
+HWUI_COMPILE_FOR_PERF := true
+
 # SELinux
 include device/qcom/sepolicy/sepolicy.mk
 BOARD_SEPOLICY_VERS := 28.0
