@@ -1,2 +1,6 @@
 allow system_server proc_touchpanel:dir search;
 allow system_server proc_touchpanel:file rw_file_perms;
+allow system_server init:binder { call transfer };
+allow system_server sysfs:file { read write open getattr };
+allow system_server sysfs_vibrator:file read;
+allow system_server vendor_camera_prop:file { open read };

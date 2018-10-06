@@ -451,6 +451,7 @@ service rmt_storage /vendor/bin/rmt_storage
 service tftp_server /vendor/bin/tftp_server
    class core
    user root
+   group root system radio
    writepid /dev/cpuset/system-background/tasks
 
 service start_hci_filter /system/vendor/bin/wcnss_filter
@@ -544,6 +545,7 @@ service loc_launcher /system/vendor/bin/loc_launcher
 service qcom-sh /vendor/bin/init.qcom.sh
     class late_start
     user root
+    group root system radio
     oneshot
 
 service qcom-post-boot /vendor/bin/init.qcom.post_boot.sh
