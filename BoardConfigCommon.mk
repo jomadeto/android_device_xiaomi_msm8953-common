@@ -215,7 +215,7 @@ endif
 BOARD_ROOT_EXTRA_FOLDERS := persist
 
 # Security patch level
-VENDOR_SECURITY_PATCH := 2018-07-01
+VENDOR_SECURITY_PATCH := 2018-10-05
 
 # Compile libhwui in performance mode
 HWUI_COMPILE_FOR_PERF := true
