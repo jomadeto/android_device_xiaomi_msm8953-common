@@ -189,6 +189,9 @@ on boot
     chown system system /sys/class/backlight/panel0-backlight/brightness
     chown system system /sys/class/backlight/panel0-backlight/max_brightness
 
+    # Reduce default Yellow flashlight
+    write /sys/devices/soc/qpnp-flash-led-25/leds/led:torch_1/max_brightness 10
+
     # Create directory used for display
     # for backward compatibility
     mkdir /persist/display 0770 system graphics
