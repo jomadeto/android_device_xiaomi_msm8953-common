@@ -109,6 +109,13 @@ persist.gps.qc_nlp_in_use=1 \
 persist.loc.nlp_name=com.qualcomm.location \
 ro.gps.agps_provider=1
 
+# Graphics
+PRODUCT_PROPERTY_OVERRIDES += \
+debug.sf.early_phase_offset_ns=1500000 \
+debug.sf.early_app_phase_offset_ns=1500000 \
+debug.sf.early_gl_phase_offset_ns=3000000 \
+debug.sf.early_gl_app_phase_offset_ns=15000000
+
 # Media
 PRODUCT_PROPERTY_OVERRIDES += \
 av.debug.disable.pers.cache=1 \
