@@ -87,13 +87,6 @@ vendor.display.disable_skip_validate=1 \
 vendor.display.enable_default_color_mode=1 \
 vendor.gralloc.enable_fb_ubwc=1
 
-# SurfaceFlinger
-ro.surface_flinger.protected_contents=true
-ro.surface_flinger.use_smart_90_for_video=true
-ro.surface_flinger.set_display_power_timer_ms=10000
-ro.surface_flinger.set_touch_timer_ms=5000
-ro.surface_flinger.set_idle_timer_ms=9000
-
 # DRM
 PRODUCT_PROPERTY_OVERRIDES += \
 drm.service.enabled=true
@@ -176,6 +169,14 @@ rild.libpath=/vendor/lib64/libril-qc-qmi-1.so \
 ro.telephony.call_ring.multiple=false \
 ro.telephony.default_network=22,20 \
 service.qti.ims.enabled=1
+
+# SurfaceFlinger
+PRODUCT_PROPERTY_OVERRIDES += \
+ro.surface_flinger.protected_contents=true \
+ro.surface_flinger.use_smart_90_for_video=true \
+ro.surface_flinger.set_display_power_timer_ms=10000 \
+ro.surface_flinger.set_touch_timer_ms=5000 \
+ro.surface_flinger.set_idle_timer_ms=9000
 
 # Time Services
 PRODUCT_PROPERTY_OVERRIDES += \
