@@ -36,9 +36,19 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Bluetooth
 PRODUCT_PROPERTY_OVERRIDES += \
     bluetooth.hfp.client=1 \
-    qcom.bluetooth.soc=smd \
+    vendor.qcom.bluetooth.soc=smd \
     ro.bluetooth.hfp.ver=1.7 \
+    ro.bluetooth.dun=true \
+    ro.bluetooth.sap=true \
+    ro.qualcomm.bluetooth.ftp=true \
+    ro.qualcomm.bluetooth.hfp=true \
+    ro.qualcomm.bluetooth.hsp=true \
+    ro.qualcomm.bluetooth.map=true \
+    ro.qualcomm.bluetooth.nap=true \
+    ro.qualcomm.bluetooth.opp=true \
+    ro.qualcomm.bluetooth.pbap=true \
     ro.qualcomm.bt.hci_transport=smd
+
 
 # Camera
 PRODUCT_PROPERTY_OVERRIDES += \
